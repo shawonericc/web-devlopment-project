@@ -1,0 +1,119 @@
+/*this is for the text style */
+pre{
+ padding:15px;
+ font-family:florence,cursive;
+ width:70px;
+ height:100ox;
+}
+
+/* This is the container box of all 4 balls, okay? */
+.dcoder{
+  -webkit-transition:3s;
+  transition:3s;
+ 
+  height:100px;
+  width:100px;
+  -webkit-animation-name:keyss;
+  -webkit-animation-delay:3s;
+  -webkit-animation-duration:5s;
+  -webkit-animation-timing-function:ease-in-out;
+  -webkit-animation-iteration-count:infinite;
+  opacity:0.4;
+  box-shadow:3px 3px 5px 5px gray;
+}
+
+/*that container box with 4 balls & keyframe animation with ups & down */
+@-webkit-keyframes keyss{
+    0% {
+        background-color:white;
+    }
+    50% {
+        background-color:red; 
+        transform:translate(0px,250px);
+        }
+    70% {
+        background-color:violet;
+    }
+    90% {
+        
+        background-color:blue;
+    }
+}
+
+
+/*all four balls together */
+.ball{
+   height:15px;
+   width:15px;
+   -webkit-border-radius:50%;
+   background-color:blue;
+   opacity:1;
+   -webkit-transition:3s;
+   
+}
+
+/*now only the first ball 1 by 1 */
+.anim1{
+   -webkit-animation-name:anim1;
+   -webkit-animation-duration:3s;
+   -webkit-animation-iteration-count:infinite;
+}
+
+/*first ball animation starts */
+@-webkit-keyframes anim1{
+   50% {
+   background-color:black;
+   transform:translate(120px,30px);}
+}
+
+/*second ball*/
+.anim2{
+   -webkit-animation-name:anim2;
+   -webkit-animation-duration:3s;
+   -webkit-animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes anim2{
+   50% {
+   background-color:green;
+   transform:translate(120px,60px);  }
+   90% {
+   background-color:#ffcd44;
+   }
+}
+
+/*now the other styles are almost same, you know! :) */
+.anim3{
+   -webkit-animation-name:anim3;
+   -webkit-animation-duration:3s;
+   -webkit-animation-iteration-count:infinite;
+}
+
+
+@-webkit-keyframes anim3{
+   50% {
+   background-color:pink;
+   transform:translate(120px,90px);  }
+   90% {
+   background-color:red;}
+ 
+   }
+   
+.anim4{
+   -webkit-animation-name:anim4;
+   -webkit-animation-duration:3s;
+   -webkit-animation-iteration-count:infinite;
+}
+
+   @-webkit-keyframes anim4{
+   50% {
+   background-color:pink;
+   transform:translate(120px,-50px);  }
+   70% {
+   background-color:green;}
+   90% {
+   background-color:#aa0044;
+   }
+   
+}
+   
