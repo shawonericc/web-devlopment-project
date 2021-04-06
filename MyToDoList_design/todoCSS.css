@@ -1,0 +1,43 @@
+*{background-color:black;}
+
+   #h1{
+   color:lighter;
+   text-shadow:4px 5px 6px gray;
+   text-align:left;
+   -webkit-animation-name:gogo;
+   -webkit-animation-duration:3s;
+   -webkit-animation-iteration-count:infinite;
+   }
+ 
+   @-webkit-keyframes gogo{
+   0%{background-color:gray;color:black;}
+   30%{background-color:black;}
+   60%{background-color:gray;color:black;}
+   100{background-color:black;
+      transform:rotate(90deg)}
+   }
+   
+   
+   
+   #but{
+   height:50px;
+   color:red;
+   }
+  .but2{
+   color:red;
+   background-color:black;
+   height:20px;
+   }
+   #inp{
+   font-family:Times;
+   color:blue;
+   }
+   #ol{
+   font-size: 30px;
+   color:#db921c;
+   font-style:italic;
+   font-family:courier, monospace;
+   }
+  li{
+  background-color:#1d232d;
+  }
