@@ -1,0 +1,37 @@
+body{
+  background-color:lightblue;
+}
+.nit{
+ background-color:black;
+ color:red;
+ transition:all 1s ease-in-out;
+}
+.fon{
+  font-family:florence,cursive;
+  font-size:16.82px;
+  transition:1s;
+}
+
+.but{
+   height:40px;
+   font-size:10px;
+   width:90px;
+   color:black;
+   background-color:red;
+}
+#cont{
+   border:1px solid black;
+   padding:10px;
+   display:block;
+}
+p{
+   text-indent:15px;
+}
+.changeHead{
+   font-style:italic;
+   background-color:blue;
+   height:60px;
+   text-shadow:5px 6px 7px violet;
+   box-shadow:6px 7px 8px 9px gray;
+   transition:all 1s ease-in-out;
+}
