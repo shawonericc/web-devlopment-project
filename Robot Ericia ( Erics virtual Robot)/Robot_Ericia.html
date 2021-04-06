@@ -1,0 +1,258 @@
+<!-- created by Shawon Eric(Buga Buga) -->
+<!--project Robot Ericia: A virtual robo project-->
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.1.js"> </script>
+      
+<script type="text/javascript" src="Robot_Ericia.js">
+
+</script>
+<link type="text/css" href="Robot_Ericia.css" rel="stylesheet">
+
+</style>
+</head>
+
+<body class="body">
+<button id="clear"> CLEAR SCREEN </button>
+<br><br>
+<!-- custom button to play audio -->
+   <nav id="nav">
+     <button id="m" onClick="aud1.play()"> My Name </button>
+     <button id="e" onClick="eriza.play()"> My SiS </button>
+     <button id="t" onClick="sololearners.play()">Sololearner</button>
+     <button id="a" onClick="motivation.play()">Motivation</button>
+   </nav>
+
+<div id="fullRobot">
+<!--antena wave container -->
+    <div id="d">
+      <div class="d0" id="d1"> 
+       <div class="d0" id="d2"> 
+         <div class="d0" id="d3"> 
+        </div>
+       </div>
+      </div>
+    </div>
+    
+    <!--Antenna ball  -->
+    <div id="dball"> </div>
+    
+    <!-- Antenna Stick -->
+    <div id="dstick"></div>
+    
+    <!-- Robo Head  -->
+    <div id="dhead"></div>
+       <div class="eye eye1"> </div>
+       <div class="eye eye2"> </div>
+       <div class="mouth"> </div>
+     
+     <!-- Robo body -->
+      <div id="dbody" onClick="destroy.play()">
+     
+         <!-- shoulder bulb  -->
+         <div id="dbulb"></div>
+         
+         <div id="tv">
+            
+         </div>
+         <br>
+    <!--picture folders for slide  -->
+         <div id="pCon">
+           <img class="pic" src="https://www.dropbox.com/s/146tez1nyhbvi8p/original.gif?dl=1">
+            
+            <img class="pic" src="https://www.dropbox.com/s/m2d7xj5i4twq78j/IMG_20200328_111621_768.JPG?dl=1">
+            <img class="pic" src="https://www.dropbox.com/s/bz65etwbxeeizoe/IMG_20200328_111607_238.jpg?dl=1">
+            <img class="pic" src="https://www.dropbox.com/s/bk9t7awdh6ji83g/IMG_20200315_094330_577_20200328113425281.jpg?dl=1">
+            
+            <img class="pic" src="https://www.dropbox.com/s/ybigfsc58povuz7/IMG_20200328_111522_287_20200328115827100.jpg?dl=1">
+            
+            <img class="pic" src="https://www.dropbox.com/s/vl90jail36ipfzs/20200314_155941.jpg?dl=1">
+            
+            <img class="pic" src="https://www.dropbox.com/s/nq4roj4mnwohxtq/IMG_20200302_121115_993.jpg?dl=1">
+            
+            <img class="pic" src="https://www.dropbox.com/s/w55zdl1ppeas395/IMG_20200302_121115_993.JPG?dl=1">
+         </div>
+           <p>  <span style="color:red">---Secret ♥---</span></p>
+        </div>
+      
+      <div id="hands"></div>
+      
+    <!--audio -->
+    <br></br><br><br><br>
+    <br></br><br><br><br>
+    
+</div>    
+<!--This part no longer needed 
+    <audio controls loop>
+    <source src="robot_duck.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+    </audio>
+-->
+ <script>
+   
+
+//Audio files all
+    var aud1= new Audio();
+    aud1.src="https://www.dropbox.com/s/a82c9xj7komer43/Robot_Duck.mp3?dl=1";
+    var eriza= new Audio();
+    eriza.src="https://www.dropbox.com/s/z7q7mwtqtjezfre/eriza2.mp3?dl=1";
+    
+    var sololearners=new Audio();
+    sololearners.src="https://www.dropbox.com/s/uf9yl9ltjlrq57b/sololearners.mp3?dl=1";
+    
+    var motivation= new Audio();
+    motivation.src="https://www.dropbox.com/s/06lwlvqamjdgpqh/motivation.mp3?dl=1";
+    
+    var destroy= new Audio();
+    destroy.src="https://www.dropbox.com/s/y2inxwjqbjvag60/destroy.mp3?dl=1";
+
+//tv screen:
+//introduction dialogue>>>>
+var txt="My name is Eric! ....  you can call me... Errrr!...Errrr!!!... [Technical Fault].... I mean,  Errr!!! Oh GOD!!.... Grrrr! >>(well, Click white buttons..now)<<";
+var i=0;
+
+var ccc= setInterval(function(){
+   if(i<txt.length){
+     document.getElementById("tv").innerHTML+= txt.charAt(i);
+     i++;}
+   
+},70);
+
+//text with button:
+//visibility of text in the tv with the click..
+//... and audio
+
+//button 1
+document.getElementById("m").addEventListener("click",f1);
+ function f1(){
+    var j=0;
+    var text="Hello! My Name Is Eric! Thank You! Glad To Meet You! See You Again";
+  document.getElementById("tv").innerHTML="";
+    setInterval(function(){
+     if(j<text.length){
+       document.getElementById("tv").innerHTML+= text.charAt(j);
+       j++;
+     }
+    },70)    
+  };
+
+
+//button 2
+document.getElementById("e").addEventListener("click",f2);
+  function f2(){
+    var k=0;
+    var text2="Hmm! You Are Asking About My Sister! Becareful! My Sister is Eriza Alisa Shatu!";
+  document.getElementById("tv").innerHTML="";
+    setInterval(function(){
+     if(k<text2.length){
+       document.getElementById("tv").innerHTML+= text2.charAt(k);
+       k++;
+     }
+    },150)    
+  };
+
+
+//button 3
+document.getElementById("t").addEventListener("click",f3);
+function f3(){
+    var l=0;
+    var text3="Hello Sololearners! I am Robot Ericia!... Do You Want Me To Crack A Joke? ... Once Upon A Time There Was A Man, And He Lived! Ha... Ha... Ha";
+  document.getElementById("tv").innerHTML="";
+    setInterval(function(){
+     if(l<text3.length){
+       document.getElementById("tv").innerHTML+= text3.charAt(l);
+       l++;
+     }
+    },100)    
+  };
+
+
+//button 4-->
+document.getElementById("a").addEventListener("click",f4);
+function f4(){
+    var z=0;
+    var text4="Real Programmers Never Comment On Their Codes!... If It Was Hard To Write, It Must Be Hard To Read! 😂";
+  document.getElementById("tv").innerHTML="";
+    setInterval(function(){
+     if(z<text4.length){
+       document.getElementById("tv").innerHTML+= text4.charAt(z);
+       z++;
+     }
+    },100)    
+  };
+
+
+
+//operating flash on "My SiS" nav pannel
+$(document).ready(function(){
+  $("#e").on("mousedown",function(){
+       $("body").toggleClass("body");
+       $("body").toggleClass("flash");
+          setTimeout(function(){
+             $("body").toggleClass("body");
+          },12000);
+  });
+});
+
+
+
+//on touching the body of Robot...
+//....it will disappear>>>
+$(document).ready(function(){
+   $("#dbody").on("mousedown",function(){
+     $("#fullRobot").toggleClass("rVibra");
+     $("#fullRobot").animate({'height':'-=50px'},1000);
+     $("#fullRobot").animate({'height':'-=50px'},2000);
+     $("#fullRobot").animate({'height':'-=50px'},3000);
+     $("#fullRobot").animate({'height':'-=50px'},4000);
+     $("#fullRobot").animate({'height':'-=50px'},5000);
+     $("#fullRobot").animate({'height':'-=40px'},6000);
+     $("#fullRobot").animate({'height':'-=50px'},7000);
+     $("#fullRobot").animate({'height':'-=50px'},8000);
+     $("#fullRobot").animate({'height':'-=50px'},9000);
+     $("#fullRobot").animate({'height':'+=2000px'},10000);
+   })
+});
+
+
+
+
+  
+// making a clear button removing all events  -->
+//clicking the Clear button all the 4 buttons
+//..will no longer work!
+$("#clear").click(function(){
+  var rem= document.getElementById("tv");
+  rem.innerHTML='';
+  document.getElementById("m").removeEventListener("click",f1);
+  document.getElementById("e").removeEventListener("click",f2);
+  document.getElementById("t").removeEventListener("click",f3);
+  document.getElementById("a").removeEventListener("click",f4);
+  document.getElementById("tv").innerHTML='Wait for as long as you want! As I am waiting for her all my life long...😅 Will you keep it secret for me??';
+  var p= document.getElementById("pCon");
+  //invisible 2nd screen will appear!
+  p.style.display="block";
+  setTimeout(function(){
+  //trying to set image tv show
+  var x=0;
+  var c=  document.getElementsByTagName("img");
+  setInterval(function(){
+  //
+  if(x<6){
+  c[x].style.display="none";
+  x++;  
+  }
+  //
+  },2000)
+  },3000);
+ });
+  
+     
+ </script>
+ 
+ <a style="color:red" href="https://www.sololearn.com/Profile/4714293/?ref=app"> &copyShawonEric(BugaBuga) </a>
+
+
+</body>
+
+</html>
