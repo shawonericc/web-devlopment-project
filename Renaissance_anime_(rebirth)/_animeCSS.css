@@ -1,0 +1,39 @@
+	#div{
+    border:2px solid gray;
+    height:300px;
+    width:300px;
+    box-shadow:5px 5px 6px 7px gray;
+    -webkit-border-radius:50%;
+    -webkit-animation-name:box;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-duration:3s;
+    -webkit-animation-delay:0.5s;
+    -webkit-transition:3s;
+}
+
+@-webkit-keyframes box{
+    0% {
+        background:radial-gradient(pink,orange,blue,black);
+        transform:scale(0.2);    
+    }
+    20% {
+        background:radial-gradient(white,yellow,orange,black);
+       transform:scale(0.4);
+    }
+    40% {
+        background:radial-gradient(black,red,white,yellow,orange);
+       transform:scale(0.6);
+    }
+    60% {
+        background:radial-gradient(black,red,white,yellow);
+        transform:scale(0.8);
+            }
+    80% {
+        background:radial-gradient(blue,black,red,white);
+       transform:scale(0.9);
+    }
+    100% {
+        background:radial-gradient(orange,blue,black,red);
+        transform:scale(1.0);
+    }
+}
